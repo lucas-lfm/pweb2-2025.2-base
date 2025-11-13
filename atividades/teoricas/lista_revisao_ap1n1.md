@@ -99,13 +99,13 @@ Explique as etapas de manipulação de eventos (seleção → binding → callba
 
 ## Parte 3. Programação Funcional em JavaScript
 
-**13) Funções puras (certo/errado com justificativa)**  
+**13) Sobre funções puras:**  
 “Funções puras podem ler e alterar variáveis globais desde que retornem sempre o mesmo valor.” Avalie e justifique com um contraexemplo.
 
-**14) Imutabilidade (análise de código)**  
+**14) Sobre o conceito de imutabilidade:**  
 Explique por que `push` em um array recebido por parâmetro pode introduzir efeitos colaterais. Reescreva `adicionarItemImpuro(arr, item)` de forma imutável usando *spread*.
 
-**15) First-class & Higher-order (múltipla escolha)**  
+**15) Sobre First-class e Higher-order Functions:**  
 Assinale a correta sobre *funções anônimas* e *higher-order*:  
 a) Funções anônimas não podem ser passadas como argumento.  
 b) Higher-order é toda função que retorna outra função ou recebe função como argumento.  
