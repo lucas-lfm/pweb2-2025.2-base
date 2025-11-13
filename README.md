@@ -15,4 +15,5 @@ Repositório para códigos e materiais utilizados na disciplina de Programação
 - APIs gratuítas para extração de dados: https://blog.dsacademy.com.br/5-apis-gratuitas-para-extracao-de-dados-em-tempo-real/
 
 **Documentações:**
+- ***React:*** https://react.dev/
 - Em atualização...
