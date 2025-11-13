@@ -271,7 +271,7 @@ b) É uma linguagem fortemente tipada, o que significa que todas as variáveis p
 c) Suporta programação orientada a objetos, funcional e imperativa, permitindo múltiplos paradigmas.    
 d) Assim como em Java, programas escritos em JavaScript só são executados em computadores que tenham a máquina virtual JSVM, instalada e em execução.   
 
-**28) FGV - 2024 - Analista Judiciário (TJ AP)/Apoio Especializado/Tecnologia da Informação Banco de Dados**
+**28) FGV - 2024 - Analista Judiciário (TJ AP)/Apoio Especializado/Tecnologia da Informação Banco de Dados**    
 No contexto do JavaScript, analise o quadro a seguir sob a ótica das diferenças sintáticas utilizadas nas declarações de variáveis, e as respectivas possibilidades de redeclarar e/ou alterar o valor de uma variável ao longo do código.    
 
 | Tipo de declaração | Possibilidade de redeclaração | Possibilidade de alteração do valor |
