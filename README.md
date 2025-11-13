@@ -13,3 +13,6 @@ Repositório para códigos e materiais utilizados na disciplina de Programação
 - Fake Store API: https://fakestoreapi.com/
 - Public APIs: https://publicapi.dev/
 - APIs gratuítas para extração de dados: https://blog.dsacademy.com.br/5-apis-gratuitas-para-extracao-de-dados-em-tempo-real/
+
+**Documentações:**
+- Em atualização...
