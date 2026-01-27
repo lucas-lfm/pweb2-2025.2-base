@@ -26,3 +26,9 @@ Repositório para códigos e materiais utilizados na disciplina de Programação
   - ***Next.js:*** https://nextjs.org/
   - ***Nuxt.js:*** https://nuxt.com/
   - ***SvelteKit:*** https://svelte.dev/docs/kit/introduction
+
+- Web Tools e Utilitários:
+  - ***Vite:*** https://vitejs.dev/
+  - ***ESLint:*** https://eslint.org/
+  - ***Prettier:*** https://prettier.io/
+  - ***Webpack:*** https://webpack.js.org/
