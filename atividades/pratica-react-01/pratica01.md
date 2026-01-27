@@ -500,4 +500,4 @@
 
 > 🚨 **Atenção** - Garanta a exclusão das pastas `node_modules` e `dist`, no arquivo `.gitignore`.
 
-> ⚠️ Em breve, será disponibilizado uma lista de exercícios teórica sobre os conceitos abordados nesta prática.
+> ⚠️ Em breve será disponibilizada uma lista de exercícios teórica sobre os conceitos abordados nesta prática.
