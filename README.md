@@ -15,5 +15,14 @@ Repositório para códigos e materiais utilizados na disciplina de Programação
 - APIs gratuítas para extração de dados: https://blog.dsacademy.com.br/5-apis-gratuitas-para-extracao-de-dados-em-tempo-real/
 
 **Documentações:**
-- ***React:*** https://react.dev/
-- Em atualização...
+
+- Bibliotecas e Frameworks JavaScript:
+  - ***React:*** https://react.dev/
+  - ***Vue.js:*** https://vuejs.org/
+  - ***Angular:*** https://angular.dev/
+  - ***Svelte:*** https://svelte.dev/
+
+- Meta-Frameworks:
+  - ***Next.js:*** https://nextjs.org/
+  - ***Nuxt.js:*** https://nuxt.com/
+  - ***SvelteKit:*** https://svelte.dev/docs/kit/introduction
