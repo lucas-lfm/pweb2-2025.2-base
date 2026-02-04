@@ -1,64 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "./App.css";
 
 import Card from "./components/Card";
 import SearchBar from "./components/SearchBar";
-// import { useEffect } from "react";
-
-const listCars = [
-  {
-    id: 1,
-    brand: "Hyundai",
-    model: "HB20",
-    km: "65.000",
-    category: "Hatch",
-    year: "2018",
-    price: "55.000,00",
-  },
-  {
-    id: 2,
-    brand: "Toyota",
-    model: "Hilux",
-    km: "100.000",
-    category: "Picape",
-    year: "2019",
-    price: "155.000,00",
-  },
-  {
-    id: 3,
-    brand: "Volkswagen",
-    model: "T-Cross",
-    km: "20.000",
-    category: "SUV",
-    year: "2021",
-    price: "135.000,00",
-  },
-];
 
 const App = () => {
-  const [cars, setCars] = useState(listCars);
+  const [cars, setCars] = useState([]); // estado para armazenar os anúncios de carros, inicialmente vazio
 
-/*   useEffect(() => {
-    async function fetchCars() {
-      const res = await fetch("http://localhost:3000/cars");
-      const data = await res.json();
-      setCars(data);
-    }
+  async function fecthCars() {
+    const res = await fetch("http://localhost:3000/anuncios");
+    const data = await res.json(); // converte o corpo da resposta para um objeto JSON
+    setCars(data); // altera o valor do estado 'cars' com os dados obtidos, isso faz com que o componente seja re-renderizado exibindo os novos dados
+  }
 
-    fetchCars();
-  }, []); */
+  useEffect(() => {
+    fecthCars();
+  }, []); // array vazio para rodar apenas uma vez
 
   const handleSearch = async (query) => {
-    if (query === '') {
-/*       const res = await fetch("http://localhost:3000/cars");
+    if (query) {
+      const res = await fetch(`http://localhost:3000/anuncios?model_like=${query}`); // faz a requisição para o endpoint de busca pelo modelo
       const data = await res.json();
-      setCars(data); */
-      setCars(listCars);
-      return;
+      setCars(data);
+    } else {
+      fecthCars(); // se a query estiver vazia, busca todos os carros novamente
     }
-
-    setCars(listCars.filter( ({ model }) => model.toLowerCase().includes(query.toLowerCase()) ));
   }
   
   return (
