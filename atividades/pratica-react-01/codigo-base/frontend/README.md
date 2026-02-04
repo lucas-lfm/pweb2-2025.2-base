@@ -13,7 +13,7 @@ Antes de começar, certifique-se de ter o Node.js e o npm instalados em sua máq
 1. Clone este repositório e entre na pasta do projeto do frontend:
   ```bash
   git clone https://github.com/lucas-lfm/pweb2-2025.2-base.git
-  cd pweb2-2025.2-base/atividades/pratica-react-01/codigo-base/backend
+  cd pweb2-2025.2-base/atividades/pratica-react-01/codigo-base/frontend
   ```
 
 2. Instale as dependências do projeto:
@@ -42,7 +42,7 @@ Antes de começar, certifique-se de ter o Node.js e o npm instalados em sua máq
 - Permite a busca de anúncios por modelo.
 - Interface simples e intuitiva para navegação.
 
-  ![Captura de tela do aplicativo React exibindo anúncios automotivos](./../../img-instrucoes/)
+  ![Captura de tela do aplicativo React exibindo anúncios automotivos](./../../img-instrucoes/screen-pratica-01.png)
 
 ## Conceitos de React e Consumo de API abordados
 
