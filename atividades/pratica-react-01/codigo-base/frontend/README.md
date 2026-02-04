@@ -42,7 +42,7 @@ Antes de começar, certifique-se de ter o Node.js e o npm instalados em sua máq
 - Permite a busca de anúncios por modelo.
 - Interface simples e intuitiva para navegação.
 
-  ![Captura de tela do aplicativo React exibindo anúncios automotivos](./../../img-instrucoes/)
+  ![Captura de tela do aplicativo React exibindo anúncios automotivos](./../../img-instrucoes/screen-pratica-01.png)
 
 ## Conceitos de React e Consumo de API abordados
 
