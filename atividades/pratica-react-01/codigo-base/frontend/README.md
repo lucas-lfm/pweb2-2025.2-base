@@ -13,7 +13,7 @@ Antes de começar, certifique-se de ter o Node.js e o npm instalados em sua máq
 1. Clone este repositório e entre na pasta do projeto do frontend:
   ```bash
   git clone https://github.com/lucas-lfm/pweb2-2025.2-base.git
-  cd pweb2-2025.2-base/atividades/pratica-react-01/codigo-base/backend
+  cd pweb2-2025.2-base/atividades/pratica-react-01/codigo-base/frontend
   ```
 
 2. Instale as dependências do projeto:
