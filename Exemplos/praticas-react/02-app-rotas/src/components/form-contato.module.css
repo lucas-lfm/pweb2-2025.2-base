@@ -1,0 +1,12 @@
+.formContato {
+  margin: 0 auto;
+  max-width: 25rem;
+
+  & textarea {
+    height: 8rem;
+  }
+
+  & button {
+    width: 100%;
+  }
+}
