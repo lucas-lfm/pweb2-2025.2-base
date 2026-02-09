@@ -1,10 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from "./form-contato.module.css";
 
 export default function FormContato() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
+
+  // ✅ Effect para controlar tempo do feedback
+  useEffect(() => {
+    if (!error && !success) return;
+
+    const timer = setTimeout(() => {
+      setError(null);
+      setSuccess(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, [error, success]);
+
+  useEffect(() => {
+    if (error) {
+      document.querySelector("input[name='nome']")?.focus();
+    }
+  }, [error]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -25,7 +43,7 @@ export default function FormContato() {
     }
 
     try {
-      const response = await fetch("http://localhost:3001/mensagen", {
+      const response = await fetch("http://localhost:3001/mensagens", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,22 +51,12 @@ export default function FormContato() {
         body: JSON.stringify({ nome, email, mensagem }),
       });
 
-      if (!response.ok) {
-        throw new Error("Erro ao enviar a mensagem");
-      }
+      if (!response.ok) throw new Error();
 
       setSuccess(true);
       event.target.reset();
-
-      setTimeout(() => {
-        setSuccess(false);
-      }, 3000);
     } catch (error) {
       setError("Erro ao enviar a mensagem. Tente novamente mais tarde.");
-
-      setTimeout(() => {
-        setError(null);
-      }, 3000);
     } finally {
       setLoading(false);
     }
